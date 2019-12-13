@@ -11,7 +11,7 @@ function BookList(props) {
       />
     );
   });
-  return <div>{listedBooks}</div>;
+  return <div className="renderPage">{listedBooks}</div>;
 }
 
 export default BookList;
