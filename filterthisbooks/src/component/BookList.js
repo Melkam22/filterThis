@@ -2,9 +2,10 @@ import React from "react";
 import Book from "./Book";
 
 function BookList(props) {
-  let listedBooks = props.myBookList.map(book => {
+  let listedBooks = props.myBookList.map((book, a) => {
     return (
       <Book
+        key={a}
         title={book.title}
         author={book.author}
         page_size={book.page_size}

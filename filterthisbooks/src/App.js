@@ -22,12 +22,19 @@ class App extends Component {
       searchBook: ""
     };
   }
+  //update function of search box
+  handleBook = e => {
+    console.log(e.target.value);
+    this.setState({
+      searchBook: e.target.value
+    });
+  };
 
   render() {
     return (
       <div>
         <h2>Filter my Books!</h2>
-        <SearchBook />
+        <SearchBook handleBook={this.handleBook} />
         <BookList myBookList={this.state.books} />
       </div>
     );
