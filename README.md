@@ -1,1 +1,3 @@
 # filterThis
+
+The functionality of this page is to insert and archive as much data as we like and the user can filter and get the one he/she is looking for. This one is filtering book, so, the user can insert the name of the book he/she wants to get and if the name matches with the one in the archive it will filter out only the one that the user wants to get. If the inserted value doesn't match with the lists in the archive, he/she gets nothing. When the inserted value doesn't match with the values in the archive, instead of showing nothing, I wanted to add more features, in addition, I will create a server and I will put all my datas in it and fetch it from there instead of keeping them in App.js ...
