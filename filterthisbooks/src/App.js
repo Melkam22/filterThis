@@ -31,11 +31,18 @@ class App extends Component {
   };
 
   render() {
+    //filter function
+    let filterMyBooks = this.state.books.filter(eachBook => {
+      return eachBook.title
+        .toUpperCase()
+        .includes(this.state.searchBook.toUpperCase());
+    }); /* comparing what we type with the existing list and sort the one inserted */
     return (
       <div>
         <h2>Filter my Books!</h2>
         <SearchBook handleBook={this.handleBook} />
-        <BookList myBookList={this.state.books} />
+        <BookList filterMyBooks={filterMyBooks /* this.state.books */} />{" "}
+        {/* we replace myBookList with filterMyBooks */}
       </div>
     );
   }

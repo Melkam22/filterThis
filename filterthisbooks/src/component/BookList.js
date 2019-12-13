@@ -2,7 +2,7 @@ import React from "react";
 import Book from "./Book";
 
 function BookList(props) {
-  let listedBooks = props.myBookList.map((book, a) => {
+  let listedBooks = props.filterMyBooks.map((book, a) => {
     return (
       <Book
         key={a}
