@@ -6,6 +6,7 @@ function SearchBook(props) {
       onChange={props.handleBook}
       type="text"
       placeholder="insert your search here"
+      id="input"
     />
   );
 }

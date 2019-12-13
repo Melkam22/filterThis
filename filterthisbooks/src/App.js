@@ -8,16 +8,57 @@ class App extends Component {
     super(props);
     this.state = {
       books: [
-        { title: "book1", author: "author1", page_size: 179 },
-        { title: "book2", author: "author2", page_size: 250 },
-        { title: "book3", author: "author3", page_size: 329 },
-        { title: "book4", author: "author4", page_size: 348 },
-        { title: "book5", author: "author5", page_size: 259 },
-        { title: "book6", author: "author6", page_size: 179 },
-        { title: "book7", author: "author7", page_size: 250 },
-        { title: "book8", author: "author8", page_size: 329 },
-        { title: "book9", author: "author9", page_size: 348 },
-        { title: "book10", author: "author10", page_size: 259 }
+        {
+          title: "Thus Spoke Zarathustra",
+          author: "Nietzsche",
+          page_size: 350
+        },
+        { title: "Adefrise", author: "Dagnachew Worku", page_size: 330 },
+        {
+          title: "The philosophy of Right",
+          author: "Hegel",
+          page_size: 374
+        },
+        { title: "The Divine Comedy", author: "Dante", page_size: 566 },
+        {
+          title: "Le Voyage d'Hector",
+          author: "Francois Lelord",
+          page_size: 267
+        },
+        { title: "Don Quixote", author: "Miguel De Cervantes", page_size: 461 },
+        {
+          title: "Half of a Yellow Sun",
+          author: "Ngozi Adichie",
+          page_size: 433
+        },
+        {
+          title: "Critique of Pure Reason",
+          author: "Immanuel Kant",
+          page_size: 480
+        },
+        { title: "Paradise Lost", author: "John Milton", page_size: 317 },
+        {
+          title: "The Karamazov Brothers",
+          author: "Fyodor Dostoevsky",
+          page_size: 1012
+        },
+        {
+          title: "The Global Minotaur",
+          author: "Yanis Varoufakis",
+          page_size: 280
+        },
+        {
+          title: "Under the Udala Trees",
+          author: "Chinelo Okparanta",
+          page_size: 328
+        },
+        { title: "Notre-Dame de Paris", author: "Victor Hugo", page_size: 697 },
+        { title: "The Nomads Daughter", author: "Waris Dirie", page_size: 288 },
+        {
+          title: "Democracy in America",
+          author: "Alexis de Tocqueville",
+          page_size: 926
+        }
       ],
       searchBook: ""
     };
@@ -33,7 +74,7 @@ class App extends Component {
   render() {
     //filter function
     let filterMyBooks = this.state.books.filter(eachBook => {
-      return eachBook.title
+      return eachBook.author
         .toUpperCase()
         .includes(this.state.searchBook.toUpperCase());
     }); /* comparing what we type with the existing list and sort the one inserted */

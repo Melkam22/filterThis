@@ -1,14 +1,17 @@
 import React from "react";
+import { wrap } from "module";
 
 function Book(props) {
   return (
     <div
       style={{
-        width: 200,
-        border: "solid",
-        backgroundColor: "rgba(234,74,94,.5)",
+        width: 240,
+        height: 150,
+        border: "none",
+        backgroundColor: "rgba(234,174,94,7)",
         display: "flex",
         flexDirection: "column",
+        paddingLeft: 5,
         justifyContent: "space evenly",
         alignItems: "center"
       }}
